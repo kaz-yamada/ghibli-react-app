@@ -1,3 +1,13 @@
-.cards-list > div {
+.category-list > div {
 	margin-bottom: 1em;
+}
+
+.category-list label {
+	margin: 0;
+	font-weight: bold;
+	display: inline;
+}
+
+.nav .nav-item .active {
+	color: black;
 }

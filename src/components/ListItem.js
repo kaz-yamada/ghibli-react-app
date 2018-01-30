@@ -6,8 +6,7 @@ export default class ListItem extends Component {
 		super(props);
 		this.state = {
 			title: this.props.title,
-			text: this.props.text,
-			type: this.props.type
+			text: this.props.text
 		};
 	}
 
@@ -15,8 +14,8 @@ export default class ListItem extends Component {
 		return (
 			<Col xs="12" md="6" lg="4">
 				<Card className="h-100 card-body">
-					<CardTitle>{this.state.title}</CardTitle>
-					<CardText tag="div">{this.state.text}</CardText>
+					<CardTitle>{this.props.title}</CardTitle>
+					<CardText tag="div">{this.props.text}</CardText>
 				</Card>
 			</Col>
 		);
