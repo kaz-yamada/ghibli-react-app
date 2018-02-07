@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
+import BrowserRouter from 'react-router-dom/BrowserRouter';
 
 import Main from 'components/Main';
 import Navigation from 'components/Navigation';
@@ -10,12 +11,14 @@ import 'styles/App.css';
 export default class App extends Component {
 	render() {
 		return (
-			<Container fluid>
-				<Navigation />
-				<Container>
-					<Main />
+			<BrowserRouter basename={'/ghibli-react-app'}>
+				<Container fluid>
+					<Navigation />
+					<Container>
+						<Main />
+					</Container>
 				</Container>
-			</Container>
+			</BrowserRouter>
 		);
 	}
 }

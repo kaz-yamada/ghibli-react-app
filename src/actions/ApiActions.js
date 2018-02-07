@@ -63,8 +63,6 @@ export function getLinkedCategories(item, mainCategory) {
 			});
 		}
 
-		console.log(promises);
-
 		return {
 			category: rel,
 			promises: axios.all(promises)
@@ -72,6 +70,11 @@ export function getLinkedCategories(item, mainCategory) {
 	});
 }
 
+/**
+ * 
+ * @param {*} item 
+ * @param {*} mainCategory 
+ */
 export function getAllRelated(item, mainCategory) {
 	const relatedCategories = categoryLinks[mainCategory];
 	let promiseArray = [];

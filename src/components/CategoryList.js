@@ -19,7 +19,8 @@ export default class CategoryList extends Component {
 	}
 
 	displayCard(item) {
-		const detailsLink = '/c/' + this.props.category + '/' + item.id;
+		const detailsLink =
+			process.env.PUBLIC_URL + '/c/' + this.props.category + '/' + item.id;
 
 		return (
 			<Col xs="12" md="6" lg="4" key={item.id}>
