@@ -27,6 +27,7 @@ export default class CategoryLinks extends Component {
 
 		this.state = {
 			loaded: false,
+			empty: false,
 			films: [],
 			location: [],
 			people: [],
@@ -42,7 +43,13 @@ export default class CategoryLinks extends Component {
 			this.props.item,
 			this.props.category
 		);
+
 		this.setState({ loaded: false });
+
+		if (!promiseArray) {
+			this.setState({ empty: true });
+			return;
+		}
 
 		promiseArray.forEach(arrayItem => {
 			arrayItem.promises
@@ -61,7 +68,10 @@ export default class CategoryLinks extends Component {
 					this.setState(obj);
 				})
 				.then(() => {
-					this.setState({ loaded: true });
+					this.setState({
+						loaded: true,
+						empty: false
+					});
 				})
 				.catch(err => {
 					console.log(err);
@@ -86,12 +96,12 @@ export default class CategoryLinks extends Component {
 		const name = this.state[label].map(val => {
 			return <p key={val.id}>{val.title || val.name}</p>;
 		});
-		return name.length ? name : <p>Empty</p>;
+		return name.length ? name : <p>None</p>;
 	}
 
 	render() {
 		if (this.state.loaded) return <div>{this.displayLinks()}</div>;
-
-		return <p>Loading...</p>;
+		else if (this.state.empty) return <div />;
+		else return <p>Loading...</p>;
 	}
 }

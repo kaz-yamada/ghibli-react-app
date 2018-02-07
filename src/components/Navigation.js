@@ -42,7 +42,7 @@ export default class Navigation extends Component {
 				<NavItem key={navItem.label}>
 					<NavLink
 						exact
-						to={navItem.path}
+						to={`${process.env.PUBLIC_URL}${navItem.path}`}
 						activeClassName="active"
 						className="nav-link"
 					>
@@ -56,7 +56,9 @@ export default class Navigation extends Component {
 	render() {
 		return (
 			<Navbar className="navbar-expand-lg" light>
-				<NavbarBrand>Ghibli React App</NavbarBrand>
+				<NavbarBrand tag="div">
+					<NavLink to={process.env.PUBLIC_URL}>Ghibli React App</NavLink>
+				</NavbarBrand>
 				<NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
 				<Collapse isOpen={!this.state.collapsed} navbar>
 					<Nav>{this.mapNavbar()}</Nav>

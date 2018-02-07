@@ -9,12 +9,12 @@ export default class Main extends Component {
 		return (
 			<main>
 				<Route
-					path={process.env.PUBLIC_URL + '/'}
+					path={`${process.env.PUBLIC_URL}/`}
 					exact={true}
 					component={Home}
 				/>
 				<Route
-					path={process.env.PUBLIC_URL + '/c/:category'}
+					path={`${process.env.PUBLIC_URL}/c/:category`}
 					component={Category}
 				/>
 			</main>

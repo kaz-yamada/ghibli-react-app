@@ -11,7 +11,7 @@ import 'styles/App.css';
 export default class App extends Component {
 	render() {
 		return (
-			<BrowserRouter basename={'/ghibli-react-app'}>
+			<BrowserRouter>
 				<Container fluid>
 					<Navigation />
 					<Container>

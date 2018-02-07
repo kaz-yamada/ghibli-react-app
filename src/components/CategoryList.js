@@ -27,10 +27,14 @@ export default class CategoryList extends Component {
 				<Card className="h-100 card-body">
 					<CardTitle>{item.name || item.title}</CardTitle>
 					<CardText tag="div">
-						<CategoryText item={item} category={this.props.category} />
+						<CategoryText
+							item={item}
+							category={this.props.category}
+							excerpt={true}
+						/>
 					</CardText>
 					<Link to={detailsLink} onClick={() => this.setCategoryItem(item)}>
-						Link
+						More Info
 					</Link>
 				</Card>
 			</Col>

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const apiUrl = 'https://ghibliapi.herokuapp.com/';
 const categoryLinks = {
-	film: [''],
+	films: false,
 	people: ['films', 'species'],
 	locations: ['residents', 'films'],
 	species: ['people', 'films'],
@@ -49,7 +49,11 @@ export function getLinkedCategories(item, mainCategory) {
 	// Get the calling category's related fields
 	const relatedCategories = categoryLinks[mainCategory];
 
-	if (isEmpty(relatedCategories)) return '';
+	console.log();
+
+	if (isEmpty(relatedCategories) || !relatedCategories) {
+		return false;
+	}
 
 	return relatedCategories.map(rel => {
 		const urls = item[rel];
@@ -71,9 +75,9 @@ export function getLinkedCategories(item, mainCategory) {
 }
 
 /**
- * 
- * @param {*} item 
- * @param {*} mainCategory 
+ *
+ * @param {*} item
+ * @param {*} mainCategory
  */
 export function getAllRelated(item, mainCategory) {
 	const relatedCategories = categoryLinks[mainCategory];
