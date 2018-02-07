@@ -10,26 +10,11 @@ import {
 } from 'reactstrap';
 
 const routeList = [
-	{
-		path: '/c/films',
-		label: 'Films'
-	},
-	{
-		path: '/c/locations',
-		label: 'Locations'
-	},
-	{
-		path: '/c/people',
-		label: 'People'
-	},
-	{
-		path: '/c/species',
-		label: 'Species'
-	},
-	{
-		path: '/c/vehicles',
-		label: 'Vehicles'
-	}
+	{ path: '/c/films', label: 'Films' },
+	{ path: '/c/locations', label: 'Locations' },
+	{ path: '/c/people', label: 'People' },
+	{ path: '/c/species', label: 'Species' },
+	{ path: '/c/vehicles', label: 'Vehicles' }
 ];
 
 export default class Navigation extends Component {
@@ -56,6 +41,7 @@ export default class Navigation extends Component {
 			return (
 				<NavItem key={navItem.label}>
 					<NavLink
+						exact
 						to={navItem.path}
 						activeClassName="active"
 						className="nav-link"

@@ -46,10 +46,13 @@ export default class Category extends Component {
 		}
 
 		return (
-			<CategoryList
-				category={this.state.currentCategory}
-				list={this.state.catItems}
-			/>
+			<div>
+				<CategoryList
+					category={this.state.currentCategory}
+					list={this.state.catItems}
+					url={this.props.match.url}
+				/>
+			</div>
 		);
 	}
 }
