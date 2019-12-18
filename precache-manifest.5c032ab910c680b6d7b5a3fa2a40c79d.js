@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9afb758035442fc5c8aad5c8ca10e526",
+    "revision": "bbb6a13122a7f7af5bf02da28054a933",
     "url": "/ghibli-react-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ghibli-react-app/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "02274edc644805967e09",
+    "revision": "65ad178b94a7500b3343",
     "url": "/ghibli-react-app/static/css/main.2ca5f4cb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ghibli-react-app/static/js/2.432e0396.chunk.js.LICENSE"
   },
   {
-    "revision": "02274edc644805967e09",
-    "url": "/ghibli-react-app/static/js/main.2e6120b9.chunk.js"
+    "revision": "65ad178b94a7500b3343",
+    "url": "/ghibli-react-app/static/js/main.96e42759.chunk.js"
   },
   {
     "revision": "b6ca93e64c71582fe7d1",
