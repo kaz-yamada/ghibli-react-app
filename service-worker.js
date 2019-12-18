@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ghibli-react-app/precache-manifest.ea9e575ad21c30c1c94d48452362a742.js"
+  "/ghibli-react-app/precache-manifest.158173a9301725daf6dd727ec804b7bb.js"
 );
 
 self.addEventListener('message', (event) => {
