@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/ghibli-react-app/static/css/main.2ca5f4cb.chunk.css",
-    "main.js": "/ghibli-react-app/static/js/main.1b7acd78.chunk.js",
-    "main.js.map": "/ghibli-react-app/static/js/main.1b7acd78.chunk.js.map",
+    "main.js": "/ghibli-react-app/static/js/main.fb9edcbe.chunk.js",
+    "main.js.map": "/ghibli-react-app/static/js/main.fb9edcbe.chunk.js.map",
     "runtime-main.js": "/ghibli-react-app/static/js/runtime-main.2f2794b4.js",
     "runtime-main.js.map": "/ghibli-react-app/static/js/runtime-main.2f2794b4.js.map",
     "static/css/2.17e5ed98.chunk.css": "/ghibli-react-app/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.d3b6d771.chunk.js": "/ghibli-react-app/static/js/2.d3b6d771.chunk.js",
-    "static/js/2.d3b6d771.chunk.js.map": "/ghibli-react-app/static/js/2.d3b6d771.chunk.js.map",
+    "static/js/2.8511e684.chunk.js": "/ghibli-react-app/static/js/2.8511e684.chunk.js",
+    "static/js/2.8511e684.chunk.js.map": "/ghibli-react-app/static/js/2.8511e684.chunk.js.map",
     "index.html": "/ghibli-react-app/index.html",
-    "precache-manifest.158173a9301725daf6dd727ec804b7bb.js": "/ghibli-react-app/precache-manifest.158173a9301725daf6dd727ec804b7bb.js",
+    "precache-manifest.7385c51e1990f2b97740c005a82e8eeb.js": "/ghibli-react-app/precache-manifest.7385c51e1990f2b97740c005a82e8eeb.js",
     "service-worker.js": "/ghibli-react-app/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/ghibli-react-app/static/css/2.17e5ed98.chunk.css.map",
     "static/css/main.2ca5f4cb.chunk.css.map": "/ghibli-react-app/static/css/main.2ca5f4cb.chunk.css.map",
-    "static/js/2.d3b6d771.chunk.js.LICENSE": "/ghibli-react-app/static/js/2.d3b6d771.chunk.js.LICENSE"
+    "static/js/2.8511e684.chunk.js.LICENSE": "/ghibli-react-app/static/js/2.8511e684.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.2f2794b4.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.d3b6d771.chunk.js",
+    "static/js/2.8511e684.chunk.js",
     "static/css/main.2ca5f4cb.chunk.css",
-    "static/js/main.1b7acd78.chunk.js"
+    "static/js/main.fb9edcbe.chunk.js"
   ]
 }
