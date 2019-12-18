@@ -1,13 +1,17 @@
 .category-list > div {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 label {
-	margin: 0;
-	font-weight: bold;
-	display: inline;
+  margin: 0;
+  font-weight: bold;
+  display: inline;
 }
 
 .nav .nav-item .active {
-	color: black;
+  color: black;
+}
+
+.label {
+  font-weight: bold;
 }
