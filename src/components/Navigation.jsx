@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom';
 import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 
 const routeList = [
-  { path: '/c/films', label: 'Films' },
-  { path: '/c/locations', label: 'Locations' },
-  { path: '/c/people', label: 'People' },
-  { path: '/c/species', label: 'Species' },
-  { path: '/c/vehicles', label: 'Vehicles' },
+  { url: 'films', label: 'Films' },
+  { url: 'locations', label: 'Locations' },
+  { url: 'people', label: 'People' },
+  { url: 'species', label: 'Species' },
+  { url: 'vehicles', label: 'Vehicles' },
 ];
 
 export default class Navigation extends Component {
@@ -29,34 +29,25 @@ export default class Navigation extends Component {
     });
   };
 
-  mapNavbar = () => {
-    return routeList.map(navItem => {
-      return (
-        <NavItem key={navItem.label}>
-          <NavLink
-            exact
-            to={`${process.env.PUBLIC_URL}${navItem.path}`}
-            activeClassName="active"
-            className="nav-link"
-          >
-            {navItem.label}
-          </NavLink>
-        </NavItem>
-      );
-    });
-  };
-
   render() {
     const { collapsed } = this.state;
 
     return (
       <Navbar className="navbar-expand-lg" light>
         <NavbarBrand tag="div">
-          <NavLink to={process.env.PUBLIC_URL}>Ghibli React App</NavLink>
+          <NavLink to="/">Ghibli React App</NavLink>
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
-          <Nav>{this.mapNavbar()}</Nav>
+          <Nav>
+            {routeList.map(navItem => (
+              <NavItem key={navItem.label}>
+                <NavLink to={`/c/${navItem.url}`} activeClassName="active" className="nav-link">
+                  {navItem.label}
+                </NavLink>
+              </NavItem>
+            ))}
+          </Nav>
         </Collapse>
       </Navbar>
     );

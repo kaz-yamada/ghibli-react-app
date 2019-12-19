@@ -51,7 +51,7 @@ export default class DetailLinks extends Component {
           const categoryData = sessionStorage.getItem(category);
 
           if (categoryData === null) {
-            const response = await getById(keyword, id);
+            const response = await getById(category, id);
             data = await response.json();
           } else {
             const list = JSON.parse(categoryData);
@@ -91,11 +91,9 @@ export default class DetailLinks extends Component {
 
   displayLinkItems = (items, category) => {
     return items.map(item => {
-      const link = `${process.env.PUBLIC_URL}/c/${category}/${item.id}`;
-
       return (
         <li key={item.id}>
-          <Link to={link}>{item.title || item.name}</Link>
+          <Link to={`/c/${category}/${item.id}`}>{item.title || item.name}</Link>
         </li>
       );
     });

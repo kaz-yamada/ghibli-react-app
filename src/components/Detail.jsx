@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 import { getById, isEmpty } from '../api/ApiActions';
-import DetailText from '../components/DetailText';
-import DetailLinks from '../components/DetailLinks';
+import DetailText from './DetailText';
+import DetailLinks from './DetailLinks';
 
 export default class Detail extends Component {
   constructor(props) {
@@ -22,10 +22,6 @@ export default class Detail extends Component {
     this.getCategoryDetails();
   }
 
-  /**
-   * Fetch the Details of the clicked category item
-   * @param {*} props
-   */
   async getCategoryDetails() {
     const { category, item, routeProps } = this.props;
     let data = {};
@@ -48,15 +44,14 @@ export default class Detail extends Component {
     this.setState({
       item: data,
       modal: true,
-      category,
     });
   }
 
   toggleModal = () => {
-    const { routeProps } = this.props;
-    const { category } = this.state;
+    const { category, routeProps } = this.props;
+    const url = `/c/${category}`;
 
-    routeProps.history.push(`/c/${category}`);
+    routeProps.history.push(url);
 
     this.setState(prevState => {
       return { modal: !prevState.modal };
@@ -64,7 +59,8 @@ export default class Detail extends Component {
   };
 
   render() {
-    const { item, modal, category } = this.state;
+    const { category } = this.props;
+    const { item, modal } = this.state;
     return (
       <div>
         <Modal isOpen={modal} autoFocus={false}>
@@ -85,7 +81,9 @@ Detail.propTypes = {
     description: PropTypes.string,
   }).isRequired,
   routeProps: PropTypes.shape({
-    history: PropTypes.shape({}),
+    history: PropTypes.shape({
+      push: PropTypes.func,
+    }),
     match: PropTypes.shape({
       params: PropTypes.shape({
         id: PropTypes.string,

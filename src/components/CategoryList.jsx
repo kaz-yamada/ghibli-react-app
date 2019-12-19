@@ -1,9 +1,10 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, Jumbotron, Card, CardTitle, CardText } from 'reactstrap';
 import { Link, Route } from 'react-router-dom';
 
-import Detail from '../containers/Detail';
+import Detail from './Detail';
 import CategoryText from './DetailText';
 import { capitaliseString } from '../utils/functions';
 
@@ -27,7 +28,7 @@ export default class CategoryList extends Component {
 
   displayCard = item => {
     const { category } = this.props;
-    const detailsLink = `${process.env.PUBLIC_URL}/c/${category}/${item.id}`;
+    const detailsLink = `/c/${category}/${item.id}`;
 
     return (
       <Col xs="12" md="6" lg="4" key={item.id}>
@@ -52,9 +53,7 @@ export default class CategoryList extends Component {
       <div className="list-wrapper">
         {this.displayJumbotron(category)}
         <Row className="category-list">
-          {Object.keys(list).map(key => {
-            return this.displayCard(list[key]);
-          })}
+          {Object.keys(list).map(key => this.displayCard(list[key]))}
         </Row>
         <Route
           path={`${url}/:id`}
@@ -70,5 +69,5 @@ export default class CategoryList extends Component {
 CategoryList.propTypes = {
   category: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  //   list: PropTypes.
+  list: PropTypes.object.isRequired,
 };

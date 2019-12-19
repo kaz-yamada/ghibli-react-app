@@ -3,12 +3,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { textLabels } from '../data/displayFields';
+import { categoryLabels } from '../data/displayFields';
 
 export default class DetailText extends Component {
   render() {
     const { category, item, excerpt } = this.props;
-    const field = textLabels[category];
+    const field = categoryLabels[category];
     let label = '';
 
     return field.text.map(currentField => {

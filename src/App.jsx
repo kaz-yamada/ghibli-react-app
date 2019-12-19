@@ -1,20 +1,22 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
-import Main from './components/Main';
+import Home from './pages/Home';
+import Category from './pages/Category';
 import Navigation from './components/Navigation';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
 
 export default () => (
-  <BrowserRouter>
+  <HashRouter>
     <Container fluid>
       <Navigation />
       <Container>
-        <Main />
+        <Route path="/" exact component={Home} />
+        <Route path="/c/:category" component={Category} />
       </Container>
     </Container>
-  </BrowserRouter>
+  </HashRouter>
 );

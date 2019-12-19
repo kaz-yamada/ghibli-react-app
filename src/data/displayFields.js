@@ -1,4 +1,4 @@
-export const textLabels = {
+export const categoryLabels = {
   films: {
     text: [
       { name: 'description', hideLabel: true },
