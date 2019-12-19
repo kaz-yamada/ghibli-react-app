@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7313740ee8f3a517f45453e18241c12c",
+    "revision": "c645f16103af0145ba58958f56d1343c",
     "url": "/ghibli-react-app/index.html"
   },
   {
-    "revision": "e73960e45b3ab94471d1",
+    "revision": "7eee6f4ae29939baa95c",
     "url": "/ghibli-react-app/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "042e4f4e10d7f34983c8",
+    "revision": "a7624403bed5324b7fd7",
     "url": "/ghibli-react-app/static/css/main.2ca5f4cb.chunk.css"
   },
   {
-    "revision": "e73960e45b3ab94471d1",
-    "url": "/ghibli-react-app/static/js/2.53041cb5.chunk.js"
+    "revision": "7eee6f4ae29939baa95c",
+    "url": "/ghibli-react-app/static/js/2.060c7bc3.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/ghibli-react-app/static/js/2.53041cb5.chunk.js.LICENSE"
+    "url": "/ghibli-react-app/static/js/2.060c7bc3.chunk.js.LICENSE"
   },
   {
-    "revision": "042e4f4e10d7f34983c8",
-    "url": "/ghibli-react-app/static/js/main.d59deafc.chunk.js"
+    "revision": "a7624403bed5324b7fd7",
+    "url": "/ghibli-react-app/static/js/main.a90598f9.chunk.js"
   },
   {
     "revision": "b6ca93e64c71582fe7d1",
