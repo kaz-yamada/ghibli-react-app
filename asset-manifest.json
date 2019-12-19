@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ghibli-react-app/static/css/main.2ca5f4cb.chunk.css",
-    "main.js": "/ghibli-react-app/static/js/main.aac36e37.chunk.js",
-    "main.js.map": "/ghibli-react-app/static/js/main.aac36e37.chunk.js.map",
+    "main.js": "/ghibli-react-app/static/js/main.35f2fce2.chunk.js",
+    "main.js.map": "/ghibli-react-app/static/js/main.35f2fce2.chunk.js.map",
     "runtime-main.js": "/ghibli-react-app/static/js/runtime-main.2f2794b4.js",
     "runtime-main.js.map": "/ghibli-react-app/static/js/runtime-main.2f2794b4.js.map",
     "static/css/2.17e5ed98.chunk.css": "/ghibli-react-app/static/css/2.17e5ed98.chunk.css",
     "static/js/2.432e0396.chunk.js": "/ghibli-react-app/static/js/2.432e0396.chunk.js",
     "static/js/2.432e0396.chunk.js.map": "/ghibli-react-app/static/js/2.432e0396.chunk.js.map",
     "index.html": "/ghibli-react-app/index.html",
-    "precache-manifest.f6dbe555dde186b1e369a5d15f4fa859.js": "/ghibli-react-app/precache-manifest.f6dbe555dde186b1e369a5d15f4fa859.js",
+    "precache-manifest.026c43197c3575254cbb4107ed132c0d.js": "/ghibli-react-app/precache-manifest.026c43197c3575254cbb4107ed132c0d.js",
     "service-worker.js": "/ghibli-react-app/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/ghibli-react-app/static/css/2.17e5ed98.chunk.css.map",
     "static/css/main.2ca5f4cb.chunk.css.map": "/ghibli-react-app/static/css/main.2ca5f4cb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.432e0396.chunk.js",
     "static/css/main.2ca5f4cb.chunk.css",
-    "static/js/main.aac36e37.chunk.js"
+    "static/js/main.35f2fce2.chunk.js"
   ]
 }
